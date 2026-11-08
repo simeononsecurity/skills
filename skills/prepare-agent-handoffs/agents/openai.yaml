@@ -1,0 +1,6 @@
+interface:
+  display_name: "Prepare Agent Handoffs"
+  short_description: "Create a verified handoff for the next session"
+  default_prompt: "Use $prepare-agent-handoffs to prepare a concise, source-linked handoff."
+policy:
+  allow_implicit_invocation: true

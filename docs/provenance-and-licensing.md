@@ -2,13 +2,19 @@
 
 ## Original skills
 
-The three skills in this repository use original wording and no copied third-party scripts or skill text. Their workflow ideas come from personally owned, public SimeonOnSecurity material:
+The nine skills in this repository use original wording and no copied third-party scripts or skill text. Their workflow ideas come from personally owned, public SimeonOnSecurity material:
 
 | Skill | Source | Supported idea | Confidence |
 | --- | --- | --- | --- |
 | `scope-agent-task` | [Effective AI Workflow course](https://simeononsecurity.com/effective-ai-course-start/) | Task packets, repository context, coding-agent work, and acceptance evidence | High |
-| `verify-agent-work` | [Effective AI Workflow course](https://simeononsecurity.com/effective-ai-course-start/) and the site's public writing workflow | Separate claims from evidence and record source, diff, tests, privacy, and cost checks | High |
+| `verify-agent-work` | [Effective AI Workflow course](https://simeononsecurity.com/effective-ai-course-start/) and the site's published writing workflow | Separate claims from evidence and record source, diff, test, privacy, and cost checks | High |
 | `delegate-bounded-work` | [Effective AI Workflow course](https://simeononsecurity.com/effective-ai-course-start/) and [AI Collaboration course](https://simeononsecurity.com/ai-collaboration-course-start/) | Assign independent work, collect reviewer evidence, integrate, and hand off | High |
+| `bound-agent-loops` | [Bounded AI Agent Loops](https://simeononsecurity.com/articles/effective-ai-bounded-agent-loops/) | Define observable state, retry budgets, new-cause checks, immediate stops, and a human handoff | High |
+| `prepare-agent-handoffs` | [AI Context Window Management](https://simeononsecurity.com/articles/effective-ai-context-window-management/) and [Drift Recovery and Handoff Workflow](https://simeononsecurity.com/articles/ai-collaboration-drift-recovery-handoffs/) | Preserve verified state across sessions and reopen current sources before resuming | High |
+| `guard-external-actions` | [Bounded AI Agent Loops](https://simeononsecurity.com/articles/effective-ai-bounded-agent-loops/) and [Drift Recovery and Handoff Workflow](https://simeononsecurity.com/articles/ai-collaboration-drift-recovery-handoffs/) | Require explicit authorization and inspect live state before retrying an uncertain external write | High |
+| `evaluate-persistent-agents` | [Specialized Agent Evaluation](https://simeononsecurity.com/articles/effective-ai-specialized-agent-evaluation/) | Review scope, permissions, trigger conditions, pilot evidence, and delivery before enabling a persistent agent | High |
+| `verify-tool-connections` | [MCP Server Setup](https://simeononsecurity.com/articles/effective-ai-mcp-server-setup/) | Distinguish configured, connected, discovered, executed, and verified states | High |
+| `retrieve-authoritative-sources` | [AI Source Retrieval](https://simeononsecurity.com/articles/ai-collaboration-map-first-retrieval/) | Treat maps and indexes as pointers, then verify current authority, revision, access, and exceptions | High |
 
 The skills generalize those ideas. They do not include site-specific commands, private infrastructure, customer information, or unpublished conversation text.
 
@@ -41,6 +47,8 @@ Checked 2026-11-08. Confidence describes how directly the source supports the st
 | [obra/superpowers README](https://github.com/obra/superpowers) and [license](https://github.com/obra/superpowers/blob/main/LICENSE) | `main`, accessed 2026-11-08 | The project describes a multi-skill coding workflow and identifies MIT licensing. | High |
 | [Superpowers OpenCode guide](https://github.com/obra/superpowers/blob/main/docs/README.opencode.md) | `main`, accessed 2026-11-08 | The upstream documents OpenCode plugin setup and version-specific configuration. | High |
 | [Anthropic skills README](https://github.com/anthropics/skills/blob/main/README.md), [`mcp-builder` entrypoint](https://github.com/anthropics/skills/blob/main/skills/mcp-builder/SKILL.md), and its [`LICENSE.txt`](https://github.com/anthropics/skills/blob/main/skills/mcp-builder/LICENSE.txt) | `main`, accessed 2026-11-08 | Anthropic presents skills as self-contained folders. The current `mcp-builder` file refers to its bundled license, which identifies Apache-2.0. | High |
+| [Bounded AI Agent Loops](https://simeononsecurity.com/articles/effective-ai-bounded-agent-loops/), [AI Context Window Management](https://simeononsecurity.com/articles/effective-ai-context-window-management/), and [Drift Recovery and Handoff Workflow](https://simeononsecurity.com/articles/ai-collaboration-drift-recovery-handoffs/) | Published source pages, accessed 2026-11-08 | Current public workflows for bounded retries, verified handoffs, and recovery after ambiguous writes. | High |
+| [Specialized Agent Evaluation](https://simeononsecurity.com/articles/effective-ai-specialized-agent-evaluation/), [MCP Server Setup](https://simeononsecurity.com/articles/effective-ai-mcp-server-setup/), and [AI Source Retrieval](https://simeononsecurity.com/articles/ai-collaboration-map-first-retrieval/) | Published source pages, accessed 2026-11-08 | Current public workflows for persistent-agent pilots, tool-connection proof, and source authority checks. | High |
 | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt) | Version 2.0, January 2004 | Primary license text used for this repository's original files. | High |
 
 ## Research limits

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Retrieve Authoritative Sources"
+  short_description: "Resolve IDs and verify live source authority"
+  default_prompt: "Use $retrieve-authoritative-sources to find and verify the current source of truth."
+policy:
+  allow_implicit_invocation: true

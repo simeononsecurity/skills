@@ -1,0 +1,6 @@
+interface:
+  display_name: "Verify Tool Connections"
+  short_description: "Prove tool access and output, not config alone"
+  default_prompt: "Use $verify-tool-connections to verify this connection through an authorized read."
+policy:
+  allow_implicit_invocation: true

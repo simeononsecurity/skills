@@ -1,0 +1,6 @@
+interface:
+  display_name: "Bound Agent Loops"
+  short_description: "Set retry limits and stop rules for agent loops"
+  default_prompt: "Use $bound-agent-loops to define checks and stop conditions for this retrying task."
+policy:
+  allow_implicit_invocation: true

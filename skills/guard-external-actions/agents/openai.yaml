@@ -1,0 +1,6 @@
+interface:
+  display_name: "Guard External Actions"
+  short_description: "Check approval before external actions"
+  default_prompt: "Use $guard-external-actions to check the authorization and recovery boundary."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Evaluate Persistent Agents"
+  short_description: "Review access and triggers before enabling agents"
+  default_prompt: "Use $evaluate-persistent-agents to prepare a reviewable pilot decision."
+policy:
+  allow_implicit_invocation: true

@@ -1,6 +1,6 @@
 # SimeonOnSecurity Skills
 
-A small collection of practical workflows for coding agents. The first release focuses on task scope, evidence-based verification, and bounded delegation.
+A practical workflow collection for coding agents. It covers task scope, source retrieval, evidence checks, delegation, bounded retries, session handoffs, external-action boundaries, and tool or persistent-agent evaluation.
 
 ## Skills
 
@@ -9,6 +9,12 @@ A small collection of practical workflows for coding agents. The first release f
 | [scope-agent-task](skills/scope-agent-task/SKILL.md) | An agent needs to change an existing repository | A bounded task, understood project rules, and observable completion checks |
 | [verify-agent-work](skills/verify-agent-work/SKILL.md) | An agent reports research, code, or operational results | A claim-by-claim evidence check with unresolved items stated |
 | [delegate-bounded-work](skills/delegate-bounded-work/SKILL.md) | Independent work can proceed in parallel | Clear ownership, reviewable reports, and accountable integration |
+| [bound-agent-loops](skills/bound-agent-loops/SKILL.md) | A task needs retries or repeated checks | A finite loop with observed state, retry limits, and stop conditions |
+| [prepare-agent-handoffs](skills/prepare-agent-handoffs/SKILL.md) | Work resumes after interruption or a new session | A concise handoff grounded in current sources and verified state |
+| [guard-external-actions](skills/guard-external-actions/SKILL.md) | A tool call affects people, money, public content, or live services | A specific authorization check and a recovery path for uncertain outcomes |
+| [evaluate-persistent-agents](skills/evaluate-persistent-agents/SKILL.md) | An agent will run on a schedule or without a live request | A scoped pilot decision covering access, triggers, delivery, and shutdown |
+| [verify-tool-connections](skills/verify-tool-connections/SKILL.md) | A new MCP or connected tool appears configured | Evidence for permission, discovery, execution, and verified output |
+| [retrieve-authoritative-sources](skills/retrieve-authoritative-sources/SKILL.md) | Search or retrieval results might be stale or conflict | A current, authorized source record with conflicts and limits exposed |
 
 ## Format and use
 
