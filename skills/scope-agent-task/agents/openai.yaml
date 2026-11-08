@@ -1,0 +1,6 @@
+interface:
+  display_name: "Scope Agent Task"
+  short_description: "Set a clear scope before repository edits"
+  default_prompt: "Use $scope-agent-task to define the scope and checks for this repository task."
+policy:
+  allow_implicit_invocation: true

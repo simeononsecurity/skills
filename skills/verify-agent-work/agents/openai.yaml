@@ -1,0 +1,6 @@
+interface:
+  display_name: "Verify Agent Work"
+  short_description: "Check reported results against evidence"
+  default_prompt: "Use $verify-agent-work to verify this agent's reported result."
+policy:
+  allow_implicit_invocation: true
