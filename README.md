@@ -1,6 +1,6 @@
 # SimeonOnSecurity Skills
 
-A practical workflow collection for coding agents. It covers task scope, source retrieval, evidence checks, delegation, bounded retries, session handoffs, external-action boundaries, and tool or persistent-agent evaluation.
+A practical workflow collection for coding agents. It covers task scope, authoritative source retrieval, evidence checks, delegation, bounded retries, session handoffs, external-action boundaries, persistent agents and connected tools, plus terminal task verification and runbook refinement.
 
 ## Skills
 
@@ -15,6 +15,8 @@ A practical workflow collection for coding agents. It covers task scope, source 
 | [evaluate-persistent-agents](skills/evaluate-persistent-agents/SKILL.md) | An agent will run on a schedule or without a live request | A scoped pilot decision covering access, triggers, delivery, and shutdown |
 | [verify-tool-connections](skills/verify-tool-connections/SKILL.md) | A new MCP or connected tool appears configured | Evidence for permission, discovery, execution, and verified output |
 | [retrieve-authoritative-sources](skills/retrieve-authoritative-sources/SKILL.md) | Search or retrieval results might be stale or conflict | A current, authorized source record with conflicts and limits exposed |
+| [terminal-task-verification](skills/terminal-task-verification/SKILL.md) | An agent performs a multi-step terminal task | An authoritative end-state check with partial progress separated from completion |
+| [terminal-runbook-refinement](skills/terminal-runbook-refinement/SKILL.md) | A verified terminal task should become reusable | A runbook replayed in a fresh target environment, with gaps recorded |
 
 ## Format and use
 

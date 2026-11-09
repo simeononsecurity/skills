@@ -1,0 +1,6 @@
+interface:
+  display_name: "Terminal Task Verification"
+  short_description: "Verify terminal work against its end-state check"
+  default_prompt: "Use $terminal-task-verification to verify this terminal task against its full outcome."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Terminal Runbook Refinement"
+  short_description: "Turn verified terminal work into replayable runbooks"
+  default_prompt: "Use $terminal-runbook-refinement to turn this verified task into a replayable runbook."
+policy:
+  allow_implicit_invocation: true

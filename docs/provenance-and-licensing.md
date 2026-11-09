@@ -2,7 +2,7 @@
 
 ## Original skills
 
-The nine skills in this repository use original wording and no copied third-party scripts or skill text. Their workflow ideas come from personally owned, public SimeonOnSecurity material:
+All eleven skills use original wording and include no copied third-party scripts or skill text. Most generalize public SimeonOnSecurity workflows. The two terminal skills also cite Terminal-RSI as conceptual inspiration; the source for each skill appears in the table:
 
 | Skill | Source | Supported idea | Confidence |
 | --- | --- | --- | --- |
@@ -15,6 +15,13 @@ The nine skills in this repository use original wording and no copied third-part
 | `evaluate-persistent-agents` | [Specialized Agent Evaluation](https://simeononsecurity.com/articles/effective-ai-specialized-agent-evaluation/) | Review scope, permissions, trigger conditions, pilot evidence, and delivery before enabling a persistent agent | High |
 | `verify-tool-connections` | [MCP Server Setup](https://simeononsecurity.com/articles/effective-ai-mcp-server-setup/) | Distinguish configured, connected, discovered, executed, and verified states | High |
 | `retrieve-authoritative-sources` | [AI Source Retrieval](https://simeononsecurity.com/articles/ai-collaboration-map-first-retrieval/) | Treat maps and indexes as pointers, then verify current authority, revision, access, and exceptions | High |
+| `terminal-task-verification` | Junyao Yang et al., [Terminal-RSI, arXiv:2610.22192v3](https://arxiv.org/abs/2610.22192v3) | Separate intermediate progress from protected-verifier completion in terminal work | High |
+| `terminal-runbook-refinement` | Junyao Yang et al., [Terminal-RSI, arXiv:2610.22192v3](https://arxiv.org/abs/2610.22192v3) | Retain verified procedures only after compatibility review and fresh replay | High |
+
+
+Full citation: Junyao Yang, Zongxia Li, Yucheng Shi, Zhongzhi Li, Ruhan Wang, Ruiwen Zhou, Haitao Mi, Shuicheng Yan, and Leowei Liang. “Terminal-RSI: Recursive Self-Improving Terminal Agents via Recursive Self-Rewrite and Policy-Refine.” arXiv:2610.22192v3, 2026-10-30. [Paper](https://arxiv.org/abs/2610.22192v3).
+
+The two terminal skills use original wording and procedures. They adapt the high-level ideas of protected-verifier completion and fresh replay. They include no paper text, benchmark data, or training code.
 
 The skills generalize those ideas. They do not include site-specific commands, private infrastructure, customer information, or unpublished conversation text.
 
@@ -49,6 +56,8 @@ Checked 2026-11-08. Confidence describes how directly the source supports the st
 | [Anthropic skills README](https://github.com/anthropics/skills/blob/main/README.md), [`mcp-builder` entrypoint](https://github.com/anthropics/skills/blob/main/skills/mcp-builder/SKILL.md), and its [`LICENSE.txt`](https://github.com/anthropics/skills/blob/main/skills/mcp-builder/LICENSE.txt) | `main`, accessed 2026-11-08 | Anthropic presents skills as self-contained folders. The current `mcp-builder` file refers to its bundled license, which identifies Apache-2.0. | High |
 | [Bounded AI Agent Loops](https://simeononsecurity.com/articles/effective-ai-bounded-agent-loops/), [AI Context Window Management](https://simeononsecurity.com/articles/effective-ai-context-window-management/), and [Drift Recovery and Handoff Workflow](https://simeononsecurity.com/articles/ai-collaboration-drift-recovery-handoffs/) | Published source pages, accessed 2026-11-08 | Current public workflows for bounded retries, verified handoffs, and recovery after ambiguous writes. | High |
 | [Specialized Agent Evaluation](https://simeononsecurity.com/articles/effective-ai-specialized-agent-evaluation/), [MCP Server Setup](https://simeononsecurity.com/articles/effective-ai-mcp-server-setup/), and [AI Source Retrieval](https://simeononsecurity.com/articles/ai-collaboration-map-first-retrieval/) | Published source pages, accessed 2026-11-08 | Current public workflows for persistent-agent pilots, tool-connection proof, and source authority checks. | High |
+| [Terminal-RSI, arXiv:2610.22192v3](https://arxiv.org/abs/2610.22192v3) | v3, dated 2026-10-30; accessed 2026-11-08 | Source for the two terminal workflow ideas. The skills use original wording and include no paper text or training code. | High |
+| [arXiv license information](https://info.arxiv.org/help/license/) | Accessed 2026-11-08 | arXiv says submitters choose a license and different versions may have different licenses. The specific v3 license was not exposed by the accessible page extraction, so this work does not claim permission to redistribute paper content. | High for policy, unverified for this version |
 | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt) | Version 2.0, January 2004 | Primary license text used for this repository's original files. | High |
 
 ## Research limits

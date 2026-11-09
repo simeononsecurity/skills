@@ -1,6 +1,6 @@
 # First-release catalog
 
-The collection follows an agent-work lifecycle: scope the task, retrieve and verify evidence, act within authorization, manage retries and continuity, and evaluate persistent tools or agents. Each skill has one trigger and a distinct result.
+The collection follows an agent-work lifecycle: scope tasks, retrieve and verify evidence, act within authorization, manage retries and continuity, and evaluate persistent tools or agents. The terminal skills apply the same evidence-first approach to command execution and reusable runbooks. Each skill has one trigger and a distinct result.
 
 | Priority | Skill | Audience and trigger | Practical outcome | Evidence and reason |
 | --- | --- | --- | --- | --- |
@@ -13,10 +13,12 @@ The collection follows an agent-work lifecycle: scope the task, retrieve and ver
 | 2 | [evaluate-persistent-agents](../skills/evaluate-persistent-agents/SKILL.md) | People considering scheduled or always-on agents | A limited pilot decision covering trigger, access, delivery, and shutdown | [Specialized Agent Evaluation](https://simeononsecurity.com/articles/effective-ai-specialized-agent-evaluation/) specifies access, trigger, environment, and pilot checks. |
 | 2 | [verify-tool-connections](../skills/verify-tool-connections/SKILL.md) | People configuring MCP or another connected tool | Separate proof for configuration, connection, discovery, execution, and output | [MCP Server Setup](https://simeononsecurity.com/articles/effective-ai-mcp-server-setup/) shows why configuration alone does not prove a tool call worked. |
 | 2 | [retrieve-authoritative-sources](../skills/retrieve-authoritative-sources/SKILL.md) | People searching across maps, documents, or retrieval systems | A current authorized record, revision, exception, and explicit conflict status | [AI Source Retrieval](https://simeononsecurity.com/articles/ai-collaboration-map-first-retrieval/) distinguishes discovery maps and summaries from the authoritative source, with access checks. |
+| 2 | [terminal-task-verification](../skills/terminal-task-verification/SKILL.md) | People using an agent for multi-step terminal work | A full end-state check, with intermediate progress kept separate from task completion | The [Terminal-RSI paper](https://arxiv.org/abs/2610.22192v3) distinguishes protected-verifier success from partial checks. This skill adapts that principle to ordinary terminal tasks. |
+| 2 | [terminal-runbook-refinement](../skills/terminal-runbook-refinement/SKILL.md) | People turning a successful terminal task into a reusable procedure | A runbook checked for target fit and replayed in a fresh environment | Terminal-RSI describes verified rewriting and fresh execution. This skill adapts the replay discipline without reproducing the paper's model-training procedure. |
 
 ## Why these belong together
 
-The first three skills cover task scope, evidence, and delegation. The added skills fill gaps visible in actual workflows: retries need a finite contract, long work needs a fresh-source handoff, external mutations need specific authorization and recovery, and connected or persistent agents need permission and delivery checks. Retrieval needs a current source and access check before an answer is trusted.
+The first three skills cover task scope, evidence, and delegation. The added skills fill gaps visible in actual workflows: retries need a finite contract, long work needs a fresh-source handoff, external mutations need specific authorization and recovery, and connected or persistent agents need permission and delivery checks. Retrieval needs a current source and access check before an answer is trusted. Terminal workflows add their own completion gate and a fresh replay before a procedure becomes reusable.
 
 ## Deferred candidates
 
